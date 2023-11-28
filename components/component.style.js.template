@@ -1,0 +1,25 @@
+import {StyleSheet} from "react-native";
+
+//If you want to import font,sizes, colors, do it.
+import {COLORS, FONT, SIZES} from "constants";
+
+//Be sure to name the stylesheet instead of "Styles" to differ from different stylesheets in the index
+export default const styles = Stylesheet.create({
+    container: {
+        //Define container values.
+    }
+    //Optional Header options here.
+    //element should be defined with a fontsize, etc.
+    exampleTextValue: {
+        fontFamily: FONT.example,
+        fontSize: SIZES.exampleSize,
+        color: COLORS.exampleColor,
+    }
+    //This goes for every element that has text/image/etc.
+    //Look up Stylesheet docs to understand the full extent of customization.
+    exampleSearch: {
+        fontFamily: FONT.example,
+        width: "100%",
+        height: "100%",
+    }
+})
